@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/list"
+    android:padding="10dp"
+    >
+
+
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/album_art"
+      android:layout_width="350dp"
+      android:layout_height="350dp"
+      android:layout_centerInParent="true"
+      android:src="@drawable/icon_music"
+      android:transitionName="logo_image"
+      android:layout_marginTop="50dp"
+      app:civ_border_color="#FF000000"
+      android:background="@drawable/img"
+      app:civ_border_width="2dp" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/album_art"
+    android:text="Music Player"
+    android:textColor="#fff"
+    android:gravity="center"
+    android:id="@+id/slogan"
+    android:textSize="50dp"
+    ></TextView>
+</RelativeLayout>
